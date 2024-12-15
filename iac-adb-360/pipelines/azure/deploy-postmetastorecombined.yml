@@ -22,8 +22,7 @@ pool:
 stages:
 - stage: s_assignmetastore
   displayName: 'assign workspace to metastore'
-  jobs:
-
+  #jobs:
 
 - stage: s_assignrepo
   displayName: 'assign repository to spn'
