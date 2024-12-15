@@ -1,6 +1,7 @@
 variables:
-  baseName: adb3600614
+  baseName: adb360devubp
   env: dev
-  resourcegroup: rg-wus3-$(baseName)-$(env)
-  location: westus3
+  resourcegroup: rg-cindia-$(baseName)-$(env)
+  location: centralindia
+
 
