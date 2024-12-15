@@ -57,7 +57,7 @@ stages:
             azureSubscription: 'ado-sc'
             scriptType: 'bash'
             scriptLocation: 'inlineScript'
-            inlineScript: 'az deployment group validate --resource-group Rg-Demo-Databricks --template-file ./iac-adb-360/1_bmainscc.bicep --parameters baseName=adb360devubp  env=dev location=centralindia vnetResourceGroup=Rg-Demo-Databricks vnetName=SVNET-Databricks'
+            inlineScript: 'az deployment group validate --resource-group Rg-Demo-Databricks --template-file ./iac-adb-360/1_bmainscc.bicep --parameters baseName=adb360devubp  env=dev location=centralindia vnetResourceGroup=Rg-Demo-Databricks vnetName=adb360devubpdev-vnet'
 
         - task: AzureCLI@2
           displayName: Validate Bicep 0
@@ -111,7 +111,7 @@ stages:
                     azureSubscription: 'ado-sc'
                     scriptType: 'bash'
                     scriptLocation: 'inlineScript'
-                    inlineScript: 'az deployment group create --resource-group Rg-Demo-Databricks --template-file ./iac-adb-360/1_bmainscc.bicep --parameters baseName=adb360devubp  env=dev location=centralindia vnetResourceGroup=Rg-Demo-Databricks vnetName=SVNET-Databricks'
+                    inlineScript: 'az deployment group create --resource-group Rg-Demo-Databricks --template-file ./iac-adb-360/1_bmainscc.bicep --parameters baseName=adb360devubp  env=dev location=centralindia vnetResourceGroup=Rg-Demo-Databricks vnetName=adb360devubpdev-vnet'
 
 
 
