@@ -1,11 +1,11 @@
-param baseName string
+param baseName string = 'adb360devubp'
 param env string = 'dev'
-param location string = resourceGroup().location
-param adbwsresgroupname string
+param location string = 'centralindia'
+param adbwsresgroupname string = 'Rg-Demo-Databricks'
 @secure()
 param pw string
 
-var locationshortname = location == 'westus3'? 'wus3' : location == 'westus2'? 'wus2' : location == 'westus' ? 'wus' : location
+var locationshortname = location == 'westus3'? 'wus3' : location == 'westus2'? 'wus2' : location == 'westus' ? 'wus' : location == 'centralindia' ? 'centralindia' : location
 
 module vnet 'bmain-scc-modules/vnet-scc-transit.bicep' = {
   name: 'vnet'
