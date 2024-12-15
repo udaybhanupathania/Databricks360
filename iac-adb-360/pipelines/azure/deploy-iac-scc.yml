@@ -16,8 +16,8 @@ pr:
 variables:
   - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/dev') }}: 
     - template: ./configdev-scc.yml
-  - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main') }}: 
-    - template: ./configprd-scc.yml
+  #- ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main') }}: 
+  #  - template: ./configprd-scc.yml
 
 
 pool:
