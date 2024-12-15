@@ -10,10 +10,10 @@ trigger:
       - '*'
 
 variables:
-  - ${{ if or(eq(variables['Build.SourceBranchName'], 'dev'), eq(variables['System.PullRequest.TargetBranchName'], 'dev')) }}:
+  #- ${{ if or(eq(variables['Build.SourceBranchName'], 'dev'), eq(variables['System.PullRequest.TargetBranchName'], 'dev')) }}:
     - group: vgdevadb360 
-  - ${{ else }}: 
-    - group: vgprdadb360
+  #- ${{ else }}: 
+  #  - group: vgprdadb360
 
 
 pool:
