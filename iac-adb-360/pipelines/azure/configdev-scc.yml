@@ -1,8 +1,8 @@
 variables:
   baseName: adbsccstd0419
   env: dev
-  resourcegroup: rg-wus2-$(baseName)-dev
-  vnetresourcegroup: rg-wus2-$(baseName)-net-dev
-  transitresourcegroup: rg-wus2-$(baseName)-trans-dev
+  resourcegroup: rg-centralindia-$(baseName)-dev
+  vnetresourcegroup: rg-centralindia-$(baseName)-net-dev
+  transitresourcegroup: rg-centralindia-$(baseName)-trans-dev
   vnetname: $(baseName)$(env)-vnet
-  location: westus2
+  location: centralindia
